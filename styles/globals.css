@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-animate {
+  background-size: 400%;
+  animation: AnimationName 10s ease infinite;
+}
+
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer base{
+  body {
+    @apply bg-[#F7FAFD] text-[#1f2937] tracking-wide
+  }
+  li {
+    @apply cursor-pointer
+  }
+
+  h1{
+    @apply  lg:text-6xl text-4xl leading-tight font-semibold bg-gradient-to-r text-transparent bg-clip-text from-[#007eff] to-[#003e7e]  text-start lg:leading-[70px]
+  }
+
+  h2{
+    @apply text-[#002a66] font-semibold text-3xl lg:text-4xl
+  }
+
+  h3{
+    @apply text-3xl font-semibold text-[#002a66]
+  }
+
+  h4{
+    @apply pb-2 text-lg font-semibold text-white 
+  }
+
+  section{
+    @apply lg:mb-20
+  }
+
+  .btn{
+    @apply rounded-full text-white bg-[#007EFE] font-semibold
+  }
+
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
