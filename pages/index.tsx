@@ -33,7 +33,8 @@ export default function Home() {
           src="assets/curve_home1-wave.svg"
           alt=""
           height={158}
-          width={1920}
+          width={0}
+          className="w-full"
         />
       </div>
       <FeedbackCustomer />

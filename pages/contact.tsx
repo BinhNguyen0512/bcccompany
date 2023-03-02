@@ -20,7 +20,7 @@ const Contact = () => {
         isBreadCrumb
         links={links}
         title={"Contact Us"}
-        description={"Contact us if there is any contact."}
+        description={"Contact us if you have any questions."}
         srcImage={"/assets/banner-vn-contact_us.png"}
         bgColor={"bg-gradient-to-r from-[#c2f0f9] via-[#d8eaf4] to-[#e6e7f2]"}
         isShowImageMobile

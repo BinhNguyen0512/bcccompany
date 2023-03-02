@@ -12,6 +12,7 @@ const Footer = () => {
           height={204}
           width={1920}
           className="w-full"
+          priority
         />
       </div>
       <div className="w-full px-4 pt-8 bg-[#001633]">
@@ -20,45 +21,51 @@ const Footer = () => {
             <div className="col-span-12 lg:col-span-6">
               <div className="flex justify-between pb-4 ">
                 <div>
-                  <Image
-                    src="assets/logo_white-layout.svg"
-                    alt=""
-                    height={39}
-                    width={138}
-                    className="h-full w-full"
-                  />
+                  <Link href="/">
+                    <Image
+                      src="assets/logo_white-layout.svg"
+                      alt=""
+                      height={39}
+                      width={138}
+                      className="h-full w-full"
+                    />
+                  </Link>
                 </div>
                 <div className="flex  items-center justify-between lg:hidden">
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
                     <Image
                       src="assets/icons/twitter-layout.svg"
                       alt=""
-                      height={16}
-                      width={16}
+                      height={34}
+                      width={34}
+                      className="w-auto h-auto"
                     />
                   </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
                     <Image
                       src="assets/icons/fb-layout.svg"
                       alt=""
-                      height={16}
-                      width={16}
+                      height={34}
+                      width={34}
+                      className="w-auto h-auto"
                     />
                   </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
                     <Image
                       src="assets/icons/linkedin-layout.svg"
                       alt=""
-                      height={16}
-                      width={16}
+                      height={34}
+                      width={34}
+                      className="w-auto h-auto"
                     />
                   </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
                     <Image
                       src="assets/icons/youtube-layout.svg"
                       alt=""
-                      height={16}
-                      width={16}
+                      height={34}
+                      width={34}
+                      className="w-auto h-auto"
                     />
                   </div>
                 </div>

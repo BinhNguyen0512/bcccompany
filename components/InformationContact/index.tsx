@@ -147,6 +147,8 @@ const InformationContact = () => {
                   handleChangeOption(option)
                 }
                 styles={customStyle}
+                id={"select-information"}
+                instanceId={"select-information"}
               />
 
               <textarea

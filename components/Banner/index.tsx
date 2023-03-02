@@ -26,10 +26,10 @@ const Banner = (props: Props) => {
     isShowImageMobile,
   } = props;
   return (
-    <section className="relative lg:min-h-[78vh] mb-[80px]">
+    <section className="relative lg:min-h-[600px] mb-[80px]">
       <div
         className={`absolute left-0 top-0 h-full w-full z-[-1] background-animate ${bgColor}`}
-      ></div>
+      />
       <div className="min-h-[550px] lg:pt-[66px] flex items-center">
         <div className={`container mx-auto py-10 px-2 lg:px-0`}>
           <div className={`lg:grid lg:grid-rows-none lg:grid-cols-12`}>
@@ -72,7 +72,13 @@ const Banner = (props: Props) => {
               } lg:block lg:col-span-6`}
             >
               <div>
-                <Image src={srcImage} alt="" width={1059} height={815}></Image>
+                <Image
+                  src={srcImage}
+                  alt=""
+                  width={1059}
+                  height={815}
+                  priority
+                />
               </div>
             </div>
           </div>
@@ -82,7 +88,7 @@ const Banner = (props: Props) => {
         <Image
           src="assets/exclude-wave.svg"
           alt=""
-          width={1920}
+          width={0}
           height={95}
           className="w-full"
         />

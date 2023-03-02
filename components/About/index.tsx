@@ -15,8 +15,8 @@ const About = () => {
         <Image
           src={"/assets/pexels-gradient-1920x520.png"}
           alt=""
-          height={520}
-          width={1920}
+          height={0}
+          width={0}
           className="w-full absolute top-0 left-0 bottom-0 right-0  h-full z-[-1]"
         />
       </div>
