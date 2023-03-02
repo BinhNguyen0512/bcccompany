@@ -1,4 +1,5 @@
 import { dataIndustry } from "@/data/dataIndustry";
+import { IndustryType } from "@/types/home";
 import Image from "next/image";
 import React from "react";
 import Slider from "react-slick";
@@ -20,7 +21,7 @@ const Industry = () => {
         {/* mobile */}
         <div className="block lg:hidden px-4">
           <Slider className="h-full w-full lg:max-w-xl" {...settings}>
-            {dataIndustry.map((item: any, index: number) => {
+            {dataIndustry.map((item: IndustryType, index: number) => {
               return (
                 <div
                   key={index}

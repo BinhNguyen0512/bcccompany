@@ -1,13 +1,18 @@
+import { LinkType } from "@/types/home";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const BreadCrumb = (props: any) => {
+interface Props {
+  links?: LinkType[];
+}
+
+const BreadCrumb = (props: Props) => {
   const { links } = props;
   return (
     <div className="lg:mb-8  mb-6">
       <div className="flex flex-row justify-center lg:justify-start items-center">
-        {links.map((link: any, index: number) => (
+        {links?.map((link: LinkType, index: number) => (
           <div key={index} className="flex items-center">
             <Link
               href={link.to}

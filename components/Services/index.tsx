@@ -1,4 +1,5 @@
 import { dataServices } from "@/data/dataServices";
+import { ServicesType } from "@/types/home";
 import Image from "next/image";
 import React from "react";
 
@@ -23,7 +24,7 @@ const Services = () => {
           set your business for success and growth.
         </p>
         <div className="flex flex-col">
-          {dataServices.map((item: any, index: number) => {
+          {dataServices.map((item: ServicesType, index: number) => {
             return (
               <div key={index}>
                 <div className="lg:block hidden">

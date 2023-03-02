@@ -2,6 +2,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { dataNavLinks } from "../../data/dataNavLinks";
 import { motion } from "framer-motion";
+import { NavLinkType, SubLinkType } from "@/types/global";
 
 const subMenuAnimate = {
   enter: {
@@ -50,7 +51,7 @@ const NavLinks = () => {
 
   return (
     <>
-      {dataNavLinks.map((navLink: any, index: number) => {
+      {dataNavLinks.map((navLink: NavLinkType, index: number) => {
         return (
           <motion.li
             key={index}
@@ -75,7 +76,7 @@ const NavLinks = () => {
               variants={subMenuAnimate}
             >
               <div className="bg-white rounded-[10px] py-[30px] px-[20px] shadow-lg shadow-slate-400">
-                {navLink.subLinks.map((sub: any, index: number) => {
+                {navLink.subLinks.map((sub: SubLinkType, index: number) => {
                   return (
                     <div
                       key={index}

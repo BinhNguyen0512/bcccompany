@@ -1,4 +1,6 @@
-export const dataProgramme = [
+import { ProgrammeType } from "@/types/partner";
+
+export const dataProgramme: ProgrammeType[] = [
     {
         title: 'Flexible Payment Method',
         top:'-1px',

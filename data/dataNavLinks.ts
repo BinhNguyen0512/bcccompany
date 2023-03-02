@@ -1,4 +1,6 @@
-export const dataNavLinks = [
+import { NavLinkType } from "@/types/global";
+
+export const dataNavLinks: NavLinkType[] = [
     {
         title: 'Services',
         subLinks: [

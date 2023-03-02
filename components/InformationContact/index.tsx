@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import Select from "react-select";
+import Select, { GroupBase, SingleValue, StylesConfig } from "react-select";
 
 interface OptionType {
   value: number;
@@ -37,7 +37,7 @@ const options: OptionType[] = [
 const styleInput =
   "mb-6 w-full text-lg border-b bg-white p-2 border-gray-300 text-black placeholder-gray-300 focus:outline-none focus:border-b-blue-400";
 
-const customStyle = {
+const customStyle: any = {
   control: (provided: HTMLSelectElement, state: { isFocused: boolean }) => {
     return {
       ...provided,
@@ -92,12 +92,13 @@ const information: InformationType[] = [
 ];
 
 const InformationContact = () => {
-  const [selectedOption, setSelectedOption] = useState<OptionType>(options[0]);
+  const [selectedOption, setSelectedOption] = useState<SingleValue<OptionType>>(
+    options[0]
+  );
 
-  const handleChangeOption = (option: OptionType) => {
+  const handleChangeOption = (option: SingleValue<OptionType>) => {
     setSelectedOption(option);
   };
-  console.log(selectedOption);
 
   return (
     <section>
@@ -142,7 +143,9 @@ const InformationContact = () => {
               <Select
                 value={selectedOption}
                 options={options}
-                onChange={(option: OptionType) => handleChangeOption(option)}
+                onChange={(option: SingleValue<OptionType>) =>
+                  handleChangeOption(option)
+                }
                 styles={customStyle}
               />
 

@@ -1,4 +1,6 @@
-export const dataIndustry  = [
+import { IndustryType } from "@/types/home";
+
+export const dataIndustry: IndustryType[]  = [
     {
         srcImage: '/assets/Lunar-new-year-1.png',
         title: 'Happy Lunar New Year 2023 - A short announcement',

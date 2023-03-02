@@ -1,4 +1,5 @@
 import { dataProgramme } from "@/data/dataProgramme";
+import { ProgrammeType } from "@/types/partner";
 import Image from "next/image";
 import React from "react";
 
@@ -15,7 +16,7 @@ export const Programme = () => {
         </h2>
 
         <ul className="lg:hidden block lg:pl-10 mt-6 mb-4">
-          {dataProgramme.map((item: any, index: number) => (
+          {dataProgramme.map((item: ProgrammeType, index: number) => (
             <li key={index} className="flex items-center mb-1">
               <Image
                 src="/assets/icons/checkmark.png"
@@ -40,7 +41,7 @@ export const Programme = () => {
             />
           </div>
           <div className="lg:block hidden">
-            {dataProgramme.map((item: any, index: number) => (
+            {dataProgramme.map((item: ProgrammeType, index: number) => (
               <div
                 key={index}
                 className={`text-[#004099] max-w-[350px] min-w-[220px] absolute rounded-lg bg-white/50 text-lg font-medium  tracking-[0.1px] px-8 py-6 shadow-[0px_12px_32px_rgba(181,181,181,0.2)]`}

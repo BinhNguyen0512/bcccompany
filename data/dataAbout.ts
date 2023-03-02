@@ -1,4 +1,6 @@
-export const dataAbout = [
+import { AboutType } from "@/types/home";
+
+export const dataAbout: AboutType[] = [
     {
         number:  97,
         name: 'Recommend  us',

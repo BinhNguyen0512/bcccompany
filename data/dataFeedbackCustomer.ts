@@ -1,4 +1,6 @@
-export const dataFeedbackCustomer = [
+import { FeedbackCustomerType } from "@/types/home";
+
+export const dataFeedbackCustomer: FeedbackCustomerType[] = [
     {
         abbreviations: 'GK',
         nameCustomer: 'Georgi Karow',

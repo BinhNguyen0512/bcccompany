@@ -1,8 +1,20 @@
+import { LinkType } from "@/types/home";
 import Image from "next/image";
 import React from "react";
 import BreadCrumb from "../BreadCrumb";
 
-const Banner = (props: any) => {
+interface Props {
+  isBreadCrumb?: boolean;
+  links?: LinkType[];
+  title: string;
+  description: string;
+  isInput?: boolean;
+  srcImage: string;
+  bgColor: string;
+  isShowImageMobile?: boolean;
+}
+
+const Banner = (props: Props) => {
   const {
     isBreadCrumb,
     links,

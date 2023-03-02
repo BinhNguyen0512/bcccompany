@@ -1,4 +1,6 @@
-export const dataServices = [
+import { ServicesType } from "@/types/home";
+
+export const dataServices: ServicesType[] = [
   {
     title: "Company Formation",
     description:

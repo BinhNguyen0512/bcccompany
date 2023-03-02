@@ -1,4 +1,6 @@
-export const dataTier =[
+import { TierType } from "@/types/partner";
+
+export const dataTier: TierType[] =[
     {
         price: 25,
         numberActive: 5,

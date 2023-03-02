@@ -1,4 +1,5 @@
 import { dataNeedle } from "@/data/dataNeedle";
+import { NeedleType } from "@/types/partner";
 import Image from "next/image";
 import React from "react";
 
@@ -10,7 +11,7 @@ const Needle = () => {
           The One Partner That Moves The Needle
         </h2>
         <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-6 mx-4">
-          {dataNeedle.map((item: any, index: number) => (
+          {dataNeedle.map((item: NeedleType, index: number) => (
             <div key={index} className="flex flex-col">
               <Image
                 src={item.srcImage}

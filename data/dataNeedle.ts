@@ -1,4 +1,6 @@
-export const dataNeedle = [
+import { NeedleType } from "@/types/partner";
+
+export const dataNeedle: NeedleType[] = [
     {
         srcImage: '/assets/section_2_1-partner.png',
         title: 'A centralized platform to streamline your management effort',

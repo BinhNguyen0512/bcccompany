@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import CountUp from "react-countup";
 import { dataAbout } from "@/data/dataAbout";
+import { AboutType } from "@/types/home";
 
 const About = () => {
   const [ref, inView] = useInView({
@@ -45,7 +46,7 @@ const About = () => {
             </div>
             <div className="lg:col-span-5">
               <div className="grid grid-cols-2">
-                {dataAbout.map((data: any, index: number) => {
+                {dataAbout.map((data: AboutType, index: number) => {
                   return (
                     <div
                       key={index}
