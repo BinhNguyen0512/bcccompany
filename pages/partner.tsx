@@ -6,17 +6,18 @@ import Newsletter from "@/components/Newsletter";
 import Programme from "@/components/Programme";
 import React from "react";
 
+const links: any = [
+  {
+    to: "/",
+    name: "Home",
+  },
+  {
+    to: "",
+    name: "Become Our Partner",
+  },
+];
+
 const Partner = () => {
-  const links: any = [
-    {
-      to: "/",
-      name: "Home",
-    },
-    {
-      to: "",
-      name: "Become Our Partner",
-    },
-  ];
   return (
     <div>
       <Banner

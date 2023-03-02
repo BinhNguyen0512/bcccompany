@@ -9,7 +9,7 @@ const Needle = () => {
         <h2 className="text-center mb-8">
           The One Partner That Moves The Needle
         </h2>
-        <div className="grid grid-rows-2 lg:grid-cols-2 gap-6 mx-4">
+        <div className="grid grid-rows-2 lg:grid-rows-none lg:grid-cols-2 gap-6 mx-4">
           {dataNeedle.map((item: any, index: number) => (
             <div key={index} className="flex flex-col">
               <Image

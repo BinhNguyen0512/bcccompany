@@ -22,7 +22,7 @@ const Navbar = () => {
               <Link href="/partner" className="lg:mr-4 xl:mr-10">
                 <li>Partner</li>
               </Link>
-              <Link href="/">
+              <Link href="/contact">
                 <li>Contact Us</li>
               </Link>
             </ul>

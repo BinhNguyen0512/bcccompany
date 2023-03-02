@@ -74,9 +74,6 @@ const NavLinks = () => {
               animate={isHover && selectIndex === index ? "enter" : "exit"}
               variants={subMenuAnimate}
             >
-              {/* <div className="py-3"> 
-                        <div className="w-4 h-4  left-3 absolute mt-1 rotate-45 bg-slate-500"></div>
-                      </div> */}
               <div className="bg-white rounded-[10px] py-[30px] px-[20px] shadow-lg shadow-slate-400">
                 {navLink.subLinks.map((sub: any, index: number) => {
                   return (
@@ -96,13 +93,13 @@ const NavLinks = () => {
                       </div>
                       <div className="flex flex-col w-full">
                         <div className="flex items-center ">
-                          <h4
+                          <p
                             className={
-                              "hover:text-primary tracking-[0.25px] pt-1 pb-1 text-lg font-semibold uppercase  transition-all text-[#002a66]"
+                              "tracking-[0.25px] pt-1 pb-1 text-lg font-semibold uppercase  transition-all"
                             }
                           >
                             {sub.name}
-                          </h4>
+                          </p>
                           <div
                             className={
                               isHoverNavLink && selectIndexNavLink === index

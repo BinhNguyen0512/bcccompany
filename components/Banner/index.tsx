@@ -20,8 +20,8 @@ const Banner = (props: any) => {
       ></div>
       <div className="min-h-[550px] lg:pt-[66px] flex items-center">
         <div className={`container mx-auto py-10 px-2 lg:px-0`}>
-          <div className={`flex justify-between flex-col lg:flex-row`}>
-            <div className="lg:col-6">
+          <div className={`lg:grid lg:grid-rows-none lg:grid-cols-12`}>
+            <div className="col-span-6">
               <div
                 className={`flex flex-col ${isInput ? "mt-16 " : "mt-24 pr-4"}`}
               >
@@ -57,7 +57,7 @@ const Banner = (props: any) => {
             <div
               className={`${
                 isShowImageMobile ? "block" : "hidden"
-              } lg:block lg:col-6`}
+              } lg:block lg:col-span-6`}
             >
               <div>
                 <Image src={srcImage} alt="" width={1059} height={815}></Image>
