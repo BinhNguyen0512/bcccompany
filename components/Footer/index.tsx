@@ -32,40 +32,36 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="flex  items-center justify-between lg:hidden">
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
                     <Image
                       src="assets/icons/twitter-layout.svg"
                       alt=""
-                      height={34}
-                      width={34}
-                      className="w-auto h-auto"
+                      height={16}
+                      width={16}
                     />
                   </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
                     <Image
                       src="assets/icons/fb-layout.svg"
                       alt=""
-                      height={34}
-                      width={34}
-                      className="w-auto h-auto"
+                      height={16}
+                      width={16}
                     />
                   </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
                     <Image
                       src="assets/icons/linkedin-layout.svg"
                       alt=""
-                      height={34}
-                      width={34}
-                      className="w-auto h-auto"
+                      height={16}
+                      width={16}
                     />
                   </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white">
+                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
                     <Image
                       src="assets/icons/youtube-layout.svg"
                       alt=""
-                      height={34}
-                      width={34}
-                      className="w-auto h-auto"
+                      height={16}
+                      width={16}
                     />
                   </div>
                 </div>

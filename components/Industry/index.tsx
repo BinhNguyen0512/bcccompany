@@ -81,7 +81,7 @@ const Industry = () => {
                   alt=""
                   width={750}
                   height={422}
-                  className="rounded-l-3xl m-0"
+                  className="rounded-l-3xl m-0 w-full"
                 ></Image>
               </div>
               <div className="col-span-5 px-[15px] py-4">
