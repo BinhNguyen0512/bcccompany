@@ -11,6 +11,7 @@ const Footer = () => {
           alt=""
           height={204}
           width={1920}
+          className="w-full"
         />
       </div>
       <div className="w-full px-4 pt-8 bg-[#001633]">

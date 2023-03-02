@@ -10,15 +10,14 @@ const About = () => {
   });
   return (
     <section className="mb:0 lg:mb-[80px] relative py-10 lg:py-20" ref={ref}>
-      {/* <div className="absolute bg-site h-full w-full bg-no-repeat bg-cover overflow-hidden z-[-1]"></div> */}
       <div>
         <Image
           src={"/assets/pexels-gradient-1920x520.png"}
           alt=""
           height={520}
           width={1920}
-          className="absolute top-0 left-0 bottom-0 right-0  h-full z-[-1]"
-        ></Image>
+          className="w-full absolute top-0 left-0 bottom-0 right-0  h-full z-[-1]"
+        />
       </div>
       <div className="container mx-auto px-[15px]">
         <div className="h-full py-15  text-white">

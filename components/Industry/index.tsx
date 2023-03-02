@@ -24,7 +24,7 @@ const Industry = () => {
               return (
                 <div
                   key={index}
-                  className="flex flex-col rounded-3xl transition-all duration-500 hover:scale-105 hover:shadow-[0px_0px_20px_#7c787833] cursor-pointer shadow-sm"
+                  className="flex flex-col rounded-3xl transition-all duration-500 lg:hover:scale-105 hover:shadow-[0px_0px_20px_#7c787833] cursor-pointer shadow-sm"
                 >
                   <Image
                     src={item.srcImage}

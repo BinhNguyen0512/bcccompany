@@ -1,25 +1,22 @@
 import React from "react";
 
-const Newsletter = () => {
+const Newsletter = (props: any) => {
+  const { title, bgColor, titleButton, description } = props;
   return (
     <section className="mb-10 lg:mb-20 px-4">
       <div className="container mx-auto">
         <div
-          className="py-20 px-6 shadow-[0px_4px_16px_rgba(37,37,37,0.25)] rounded-[20px]
-            bg-gradient-to-r
-         from-[#90c5f1]
-           via-[#90c5f1]
-           to-[#ee8bab]
+          className={`py-20 px-6 shadow-[0px_4px_16px_rgba(37,37,37,0.25)] rounded-[20px]
+            ${bgColor}
            background-animate
-        "
+        `}
         >
           <div className="mx-auto max-w-[880px]">
             <h2 className="mb-6 text-center text-white capitalize text-[30px] lg:text-[40px]">
-              Get helpful tips and info from our newsletter!
+              {title}
             </h2>
             <p className="mx-auto mb-6 max-w-lg text-center text-white">
-              Stay in the know and be empowered with our strategic how-tos,
-              resources, and guidelines.
+              {description}
             </p>
             <div className="flex flex-col  items-center">
               <input
@@ -29,7 +26,7 @@ const Newsletter = () => {
               />
 
               <button className="btn w-[170px] truncate font-semibold py-2 px-6 text-lg tracking-wider">
-                Subscribe
+                {titleButton}
               </button>
             </div>
           </div>

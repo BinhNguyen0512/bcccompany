@@ -27,7 +27,9 @@ const subMenuAnimate = {
 
 const NavLinks = () => {
   const [isHover, toggleHover] = useState<boolean>(false);
+  const [isHoverNavLink, setIsHoverNavLink] = useState<boolean>(false);
   const [selectIndex, setSelectIndex] = useState<number>(0);
+  const [selectIndexNavLink, setSelectIndexNavLink] = useState<number>(0);
   const startHoverMenu = (index: number) => {
     setSelectIndex(index);
     toggleHover(true);
@@ -35,6 +37,15 @@ const NavLinks = () => {
   const endHoverMenu = (index: number) => {
     setSelectIndex(index);
     toggleHover(false);
+  };
+
+  const onMouseOver = (index: number) => {
+    setSelectIndexNavLink(index);
+    setIsHoverNavLink(true);
+  };
+
+  const onMouseOut = () => {
+    setIsHoverNavLink(false);
   };
 
   return (
@@ -58,7 +69,7 @@ const NavLinks = () => {
             </div>
 
             <motion.div
-              className="absolute top-10 hidden group-hover:block"
+              className="absolute top-10 hidden group-hover:block "
               initial="exit"
               animate={isHover && selectIndex === index ? "enter" : "exit"}
               variants={subMenuAnimate}
@@ -66,12 +77,14 @@ const NavLinks = () => {
               {/* <div className="py-3"> 
                         <div className="w-4 h-4  left-3 absolute mt-1 rotate-45 bg-slate-500"></div>
                       </div> */}
-              <div className="bg-white rounded-[10px] py-[30px] px-[10px] shadow-lg shadow-slate-400">
+              <div className="bg-white rounded-[10px] py-[30px] px-[20px] shadow-lg shadow-slate-400">
                 {navLink.subLinks.map((sub: any, index: number) => {
                   return (
                     <div
                       key={index}
-                      className="flex pt-4 group hover:text-primary"
+                      className="flex pt-4 group text-[#002a66] hover:text-primary"
+                      onMouseOver={() => onMouseOver(index)}
+                      onMouseOut={() => onMouseOut()}
                     >
                       <div className="mr-3">
                         <Image
@@ -81,28 +94,36 @@ const NavLinks = () => {
                           height={36}
                         />
                       </div>
-                      <div className="flex flex-col ">
-                        <div className="flex items-center">
+                      <div className="flex flex-col w-full">
+                        <div className="flex items-center ">
                           <h4
                             className={
-                              "tracking-[0.25px] pt-1 pb-1 text-lg font-semibold uppercase text-[#002a66]"
+                              "hover:text-primary tracking-[0.25px] pt-1 pb-1 text-lg font-semibold uppercase  transition-all text-[#002a66]"
                             }
                           >
                             {sub.name}
                           </h4>
-                          {/* <div className={"hidden group-hover:block ml-2"}>
+                          <div
+                            className={
+                              isHoverNavLink && selectIndexNavLink === index
+                                ? "block"
+                                : "hidden"
+                            }
+                          >
                             <Image
-                              src="assets/icons/double-right-chevron.svg"
+                              src="/assets/icons/double-right.png"
                               alt=""
                               width={16}
                               height={16}
-                              className="text-sky-500"
+                              className="ml-4"
                             />
-                          </div> */}
+                          </div>
                         </div>
-                        <p className="text-sm tracking-[0.25px] ">
+                        <p className=" text-sm font-light tracking-[0.25px] text-[#5c5c5c] hover:text-[#5c5c5c] ">
                           {sub.description}
                         </p>
+
+                        <div className="w-full border-[0.5px] border-gray-200 mt-4  "></div>
                       </div>
                     </div>
                   );

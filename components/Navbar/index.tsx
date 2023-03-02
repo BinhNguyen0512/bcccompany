@@ -19,7 +19,7 @@ const Navbar = () => {
           <div className="lg:col-auto lg:col-7 lg:px-2 w-full font-medium">
             <ul className="flex justify-start">
               <NavLinks />
-              <Link href="/" className="lg:mr-4 xl:mr-10">
+              <Link href="/partner" className="lg:mr-4 xl:mr-10">
                 <li>Partner</li>
               </Link>
               <Link href="/">
@@ -30,7 +30,7 @@ const Navbar = () => {
 
           <div className="lg:col-3">
             <div className="flex items-center justify-end">
-              <button className="btn w-max inline-block py-2 px-6 lg:mr-3 bg-primary transition-all hover:bg-">
+              <button className="btn w-max inline-block py-2 px-6 lg:mr-3 bg-primary transition-all ">
                 Set Up Now
               </button>
               <button className="btn bg-white border-[1px] text-primary py-2 px-6 border-[#007eff] hover:bg-primary hover:text-white transition-all">

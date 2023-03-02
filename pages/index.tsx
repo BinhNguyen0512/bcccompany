@@ -16,7 +16,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Banner />
+      <Banner
+        title={"Let's streamline your Vietnam business"}
+        description={
+          "We simplify your Vietnam company setup procedures and administrative tasks with tailor-made solutions and seamless experience."
+        }
+        isInput
+        srcImage={"/assets/banner-vn-home.png"}
+        bgColor={`bg-gradient-to-r from-[#D8F3F7] via-[#D9E5F9] to-[#D7C6FD]`}
+      />
       <Industry />
       <About />
       <Services />
@@ -29,7 +37,14 @@ export default function Home() {
         />
       </div>
       <FeedbackCustomer />
-      <Newsletter />
+      <Newsletter
+        bgColor="bg-gradient-to-r from-[#90c5f1] via-[#90c5f1] to-[#ee8bab]"
+        titleButton="Subscribe"
+        description={
+          "Stay in the know and be empowered with our strategic how-tos, resources, and guidelines."
+        }
+        title={"Get Helpful Tips And Info From Our Newsletter!"}
+      />
     </>
   );
 }

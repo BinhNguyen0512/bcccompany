@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .background-animate {
   background-size: 400%;
   animation: AnimationName 10s ease infinite;
