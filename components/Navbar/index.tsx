@@ -128,14 +128,18 @@ const Navbar = () => {
                     </div>
                   </li>
                   <li>
-                    <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
-                      Partner
-                    </p>
+                    <Link href="/partner" onClick={() => setIsOpen(false)}>
+                      <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
+                        Partner
+                      </p>
+                    </Link>
                   </li>
                   <li>
-                    <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
-                      Contact
-                    </p>
+                    <Link href="/contact" onClick={() => setIsOpen(false)}>
+                      <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
+                        Contact
+                      </p>
+                    </Link>
                   </li>
                 </ul>
               </div>
