@@ -2,6 +2,22 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const srcIconsSocial = [
+  "assets/icons/twitter-layout.svg",
+  "assets/icons/fb-layout.svg",
+  "assets/icons/linkedin-layout.svg",
+  "assets/icons/youtube-layout.svg",
+];
+
+const srcIconsPayment = [
+  "assets/visa-layout.svg",
+  "assets/stripe-layout.svg",
+  "assets/american_express-layout.svg",
+  "assets/mastercard-layout.svg",
+  "assets/jcb-layout.svg",
+  "assets/discover-layout.svg",
+];
+
 const Footer = () => {
   return (
     <div>
@@ -32,38 +48,14 @@ const Footer = () => {
                   </Link>
                 </div>
                 <div className="flex  items-center justify-between lg:hidden">
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/twitter-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/fb-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/linkedin-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/youtube-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
+                  {srcIconsSocial.map((srcIcon: string) => (
+                    <div
+                      key={srcIcon}
+                      className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]"
+                    >
+                      <Image src={srcIcon} alt="" height={16} width={16} />
+                    </div>
+                  ))}
                 </div>
               </div>
 
@@ -132,42 +124,11 @@ const Footer = () => {
                   />
                 </div>
                 <div className="grid grid-cols-3 gap-1 lg:gap-2">
-                  <Image
-                    src="assets/visa-layout.svg"
-                    alt=""
-                    height={36}
-                    width={64}
-                  />
-                  <Image
-                    src="assets/stripe-layout.svg"
-                    alt=""
-                    height={36}
-                    width={64}
-                  />
-                  <Image
-                    src="assets/american_express-layout.svg"
-                    alt=""
-                    height={36}
-                    width={64}
-                  />
-                  <Image
-                    src="assets/mastercard-layout.svg"
-                    alt=""
-                    height={36}
-                    width={64}
-                  />
-                  <Image
-                    src="assets/jcb-layout.svg"
-                    alt=""
-                    height={36}
-                    width={64}
-                  />
-                  <Image
-                    src="assets/discover-layout.svg"
-                    alt=""
-                    height={36}
-                    width={64}
-                  />
+                  {srcIconsPayment.map((srcIcon: string) => (
+                    <div key={srcIcon}>
+                      <Image src={srcIcon} alt="" height={36} width={64} />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -209,38 +170,14 @@ const Footer = () => {
 
               <div className="hidden lg:block">
                 <div className="flex">
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/twitter-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/fb-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/linkedin-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
-                  <div className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]">
-                    <Image
-                      src="assets/icons/youtube-layout.svg"
-                      alt=""
-                      height={16}
-                      width={16}
-                    />
-                  </div>
+                  {srcIconsSocial.map((srcIcon: string) => (
+                    <div
+                      key={srcIcon}
+                      className="mr-2 flex items-center justify-center rounded-lg bg-white w-[34px] h-[34px]"
+                    >
+                      <Image src={srcIcon} alt="" height={16} width={16} />
+                    </div>
+                  ))}
                 </div>
               </div>
             </div>
