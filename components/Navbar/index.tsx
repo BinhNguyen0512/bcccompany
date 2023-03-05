@@ -47,7 +47,10 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <div className="flex justify-between items-center py-3 row">
             <div className="lg:col-2 px-2">
-              <div className="relative w-[130px] h-[36px] mr-4">
+              <div
+                className="relative w-[130px] h-[36px] mr-4"
+                onClick={() => handleCloseMenu()}
+              >
                 <Link href="/">
                   <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/5/5f/BBC_Online_Logo.svg"
@@ -87,7 +90,10 @@ const Navbar = () => {
 
         <div className="block lg:hidden">
           <div className=" p-5 flex justify-between items-center  z-[100]">
-            <div className="w-[130px] h-[36px] flex">
+            <div
+              className="w-[130px] h-[36px] flex"
+              onClick={() => handleCloseMenu()}
+            >
               <Link href="/">
                 <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/5/5f/BBC_Online_Logo.svg"
