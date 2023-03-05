@@ -5,6 +5,8 @@ declare module "react-select" {
     export default content;
   }
 
+export type TitleType = "Services" | "Resources";
+
 export interface SubLinkType{
   srcIcon: string;
   name: string;
@@ -12,7 +14,7 @@ export interface SubLinkType{
 }
 
 export interface NavLinkType{
-  title: string;
+  title: TitleType;
   subLinks: SubLinkType[]
 }
 

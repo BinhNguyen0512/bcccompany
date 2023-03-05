@@ -3,9 +3,44 @@ import Link from "next/link";
 import React, { useState } from "react";
 import NavLinks from "./NavLinks";
 import { motion } from "framer-motion";
+import { dataNavLinks } from "@/data/dataNavLinks";
+import { NavLinkType, SubLinkType, TitleType } from "@/types/global";
+
+const menuAnimation = {
+  hidden: {
+    opacity: 0,
+    height: 0,
+    padding: 0,
+    transition: { duration: 0.5 },
+  },
+  show: {
+    opacity: 1,
+    height: "auto",
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [titleNav, setTitleNav] = useState<TitleType>("Services");
+  const [isShowSubNav, setIsShowSubNav] = useState<boolean>(false);
+
+  const handleSubLink = (navLink: NavLinkType) => {
+    setTitleNav(navLink.title);
+    if (titleNav === navLink.title) {
+      setIsShowSubNav(!isShowSubNav);
+      return;
+    }
+    setIsShowSubNav(true);
+  };
+
+  const handleCloseMenu = () => {
+    setIsShowSubNav(false);
+    setIsOpen(false);
+  };
+
   return (
     <div className="fixed w-full lg:h-[66px] z-[100] bg-white">
       <div className="container mx-auto">
@@ -51,8 +86,8 @@ const Navbar = () => {
         </div>
 
         <div className="block lg:hidden">
-          <div className=" p-4 flex justify-between items-center">
-            <div className="w-[130px] h-[36px]">
+          <div className=" p-5 flex justify-between items-center  z-[100]">
+            <div className="w-[130px] h-[36px] flex">
               <Link href="/">
                 <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/5/5f/BBC_Online_Logo.svg"
@@ -64,7 +99,10 @@ const Navbar = () => {
               </Link>
             </div>
             {!isOpen && (
-              <div onClick={() => setIsOpen(true)}>
+              <div
+                onClick={() => setIsOpen(true)}
+                className={" transition-all duration-500"}
+              >
                 <Image
                   src={"/assets/icons/menu.png"}
                   alt=""
@@ -74,7 +112,7 @@ const Navbar = () => {
               </div>
             )}
             {isOpen && (
-              <div onClick={() => setIsOpen(false)}>
+              <div onClick={() => handleCloseMenu()}>
                 <Image
                   src={"/assets/icons/close.png"}
                   alt=""
@@ -84,77 +122,105 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          {isOpen && (
-            <motion.div className="px-4 mt-4 shadow-lg">
-              <div className="w-full bg-white mb-4">
-                <div className=" p-2 flex items-center rounded-full w-full bg-white border border-blue-400">
-                  <div className="items-center justify-center flex">
-                    <Image
-                      src="/assets/icons/search.png"
-                      alt=""
-                      width={16}
-                      height={16}
-                    />
-                  </div>
-                  <input
-                    type="text"
-                    placeholder="Search"
-                    className="rounded-full px-2 focus:outline-none w-full"
+          <motion.div
+            className={`
+            lg:hidden bg-white fixed w-full shadow-lg transition-all duration-500  overflow-y-auto p-5  ${
+              isOpen ? "left-0" : "left-[-100%]"
+            }
+            `}
+            style={{
+              height: "90%",
+            }}
+          >
+            <div className="container mx-auto">
+              <div className=" p-2 flex items-center rounded-full w-full bg-white border border-blue-400">
+                <div className="items-center justify-center flex">
+                  <Image
+                    src="/assets/icons/search.png"
+                    alt=""
+                    width={16}
+                    height={16}
                   />
                 </div>
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="rounded-full px-2 focus:outline-none w-full"
+                />
               </div>
 
-              <div>
-                <ul>
-                  <li>
-                    <div className="py-2 font-semibold text-[17px]  flex justify-between items-center">
-                      <p>Services</p>
-                      <Image
-                        src="assets/icons/chevron-down.svg"
-                        alt=""
-                        height={16}
-                        width={16}
-                      />
-                    </div>
-                  </li>
-                  <li>
-                    <div className="py-2 font-semibold text-[17px] flex justify-between items-center">
-                      <p>Resources</p>
-                      <Image
-                        src="assets/icons/chevron-down.svg"
-                        alt=""
-                        height={16}
-                        width={16}
-                      />
-                    </div>
-                  </li>
-                  <li>
-                    <Link href="/partner" onClick={() => setIsOpen(false)}>
-                      <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
-                        Partner
-                      </p>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/contact" onClick={() => setIsOpen(false)}>
-                      <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
-                        Contact
-                      </p>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
+              <button className="btn w-full py-2 px-6 lg:mr-3 bg-primary transition-all my-5">
+                Set Up Now
+              </button>
 
               <div className="flex flex-col">
-                <button className="btn w-full py-2 px-6 lg:mr-3 bg-primary transition-all my-5">
-                  Set Up Now
-                </button>
-                <button className="btn mb-8 bg-white border-[1px] text-primary py-2 px-6 border-[#007eff] hover:bg-primary hover:text-white transition-all">
+                <div>
+                  <ul>
+                    {dataNavLinks.map((navLink: NavLinkType, index: number) => (
+                      <li key={index} className="relative">
+                        <div
+                          className="py-2 font-semibold text-[17px]  flex justify-between items-center"
+                          onClick={() => handleSubLink(navLink)}
+                        >
+                          <p>{navLink.title}</p>
+                          <Image
+                            src="assets/icons/chevron-down.svg"
+                            alt=""
+                            height={16}
+                            width={16}
+                          />
+                        </div>
+                        <motion.ul className={`pl-2`}>
+                          {titleNav === navLink.title &&
+                            isShowSubNav &&
+                            navLink.subLinks.map(
+                              (subLink: SubLinkType, index: number) => (
+                                <motion.li
+                                  key={index}
+                                  className="flex items-center mb-3 cursor-none"
+                                  variants={menuAnimation}
+                                  initial="hidden"
+                                  animate="show"
+                                  exit="hidden"
+                                >
+                                  <Image
+                                    src={subLink.srcIcon}
+                                    alt=""
+                                    height={24}
+                                    width={24}
+                                    className="mr-2"
+                                  />
+                                  <p>{subLink.name}</p>
+                                </motion.li>
+                              )
+                            )}
+                        </motion.ul>
+                      </li>
+                    ))}
+
+                    <li>
+                      <Link href="/partner" onClick={() => handleCloseMenu()}>
+                        <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
+                          Partner
+                        </p>
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/contact" onClick={() => handleCloseMenu()}>
+                        <p className="py-2 font-semibold text-[17px] flex justify-between items-center">
+                          Contact
+                        </p>
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <button className="btn mb-8 mt-8 bg-white border-[1px] text-primary py-2 px-6 border-[#007eff] hover:bg-primary hover:text-white transition-all">
                   Login
                 </button>
               </div>
-            </motion.div>
-          )}
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>
