@@ -15,7 +15,7 @@ const Navbar = () => {
               <div className="relative w-[130px] h-[36px] mr-4">
                 <Link href="/">
                   <Image
-                    src="assets/logo_BBCIncorp.svg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/5f/BBC_Online_Logo.svg"
                     alt=""
                     height={0}
                     width={0}
@@ -52,13 +52,14 @@ const Navbar = () => {
 
         <div className="block lg:hidden">
           <div className=" p-4 flex justify-between items-center">
-            <div>
+            <div className="w-[130px] h-[36px]">
               <Link href="/">
                 <Image
-                  src="assets/logo_BBCIncorp.svg"
+                  src="https://upload.wikimedia.org/wikipedia/commons/5/5f/BBC_Online_Logo.svg"
                   alt=""
                   height={36}
                   width={130}
+                  className="w-full h-full"
                 />
               </Link>
             </div>

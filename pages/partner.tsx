@@ -23,7 +23,7 @@ const Partner = () => {
       <Banner
         isBreadCrumb
         links={links}
-        title={"Partner With BBCIncorp"}
+        title={"Partner With BBC"}
         description={
           "We simplify your Vietnam company setup procedures and administrative tasks with tailor-made solutions and seamless experience."
         }

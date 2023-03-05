@@ -36,10 +36,10 @@ const Footer = () => {
           <div className="pb-8 grid grid-cols-12">
             <div className="col-span-12 lg:col-span-6">
               <div className="flex justify-between pb-4 ">
-                <div>
+                <div className="h-[39px] w-[138px] flex justify-start">
                   <Link href="/">
                     <Image
-                      src="assets/logo_white-layout.svg"
+                      src="https://upload.wikimedia.org/wikipedia/commons/5/5f/BBC_Online_Logo.svg"
                       alt=""
                       height={39}
                       width={138}
@@ -68,9 +68,7 @@ const Footer = () => {
                   height={17}
                   width={17}
                 />
-                <p className="ml-2 text-[#b3b9c2] text-sm">
-                  service@bbcincorp.com
-                </p>
+                <p className="ml-2 text-[#b3b9c2] text-sm">service@BCC.com</p>
               </div>
               <div className="flex items-center mb-0.5">
                 <Image
@@ -79,7 +77,7 @@ const Footer = () => {
                   height={17}
                   width={17}
                 />
-                <p className="ml-2 text-[#b3b9c2] text-sm">(+852) 8192 8666</p>
+                <p className="ml-2 text-[#b3b9c2] text-sm">(+84) 981376700</p>
               </div>
               <div className="flex items-center mb-0.5">
                 <Image
@@ -88,7 +86,7 @@ const Footer = () => {
                   height={17}
                   width={17}
                 />
-                <p className="ml-2 text-[#b3b9c2] text-sm">(+65 3138 1666)</p>
+                <p className="ml-2 text-[#b3b9c2] text-sm">(+84) 6724 8888</p>
               </div>
               <div className="flex items-center mb-0.5">
                 <Image
