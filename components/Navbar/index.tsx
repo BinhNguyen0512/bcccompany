@@ -130,13 +130,10 @@ const Navbar = () => {
           </div>
           <motion.div
             className={`
-            lg:hidden bg-white fixed w-full shadow-lg transition-all duration-500  overflow-y-auto p-5  ${
+            lg:hidden bg-white fixed w-full h-full shadow-lg transition-all duration-500  overflow-y-auto p-5  ${
               isOpen ? "left-0" : "left-[-100%]"
             }
             `}
-            style={{
-              height: "90%",
-            }}
           >
             <div className="container mx-auto">
               <div className=" p-2 flex items-center rounded-full w-full bg-white border border-blue-400">
