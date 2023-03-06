@@ -27,7 +27,7 @@ const About = () => {
             <div className="lg:col-span-7 text-white tracking-wider font-light">
               <div className="flex h-full flex-col items-center justify-center text-base lg:text-xl">
                 <p className="mb-4 ">
-                  <span className="text-[#03f4ff]">BBCIncorp Limited </span>
+                  <span className="text-[#03f4ff]">BBC Limited </span>
                   was established in 2017 with a mission to help startups and
                   SMEs to free their resources tied up to intimidating company
                   administration tasks, and thus speed up the process of setting
