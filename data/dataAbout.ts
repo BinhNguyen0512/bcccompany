@@ -2,17 +2,17 @@ import { AboutType } from "@/types/home";
 
 export const dataAbout: AboutType[] = [
     {
-        number:  97,
-        name: 'Recommend  us',
+        number:  121,
+        name: 'Recommend us',
         duration: 5
     },
     {
-        number:  12,
-        name: 'Years in  Business',
+        number:  18,
+        name: 'Years in Business',
         duration: 5
     },
     {
-        number:  9000,
+        number:  6700,
         name: 'Successful cases',
         duration: 5 
     },

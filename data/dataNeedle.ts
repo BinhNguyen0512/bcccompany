@@ -2,7 +2,7 @@ import { NeedleType } from "@/types/partner";
 
 export const dataNeedle: NeedleType[] = [
     {
-        srcImage: '/assets/section_2_1-partner.png',
+        srcImage: '/assets/management.png',
         title: 'A centralized platform to streamline your management effort',
         description: `Too busy to handle all legal stuff for your clients' companies? Our management portal was designed for just that. Set it up and keep them all compliant in one place.`
     },

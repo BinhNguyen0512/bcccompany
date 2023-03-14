@@ -17,12 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Banner
-        title={"Let's streamline your Vietnam business"}
+        title={"BCCCOMPANY with Vietnam business"}
         description={
-          "We simplify your Vietnam company setup procedures and administrative tasks with tailor-made solutions and seamless experience."
+          "Combining CRO expertise with world-class landing page technology, BCCCOMPANY helps businesses increase their digital advertising results with relevant, conversion-optimized landing pages for all of their campaigns"
         }
         isInput
-        srcImage={"/assets/banner-vn-home.png"}
+        srcImage={"/assets/image-banner-home.png"}
         bgColor={`bg-gradient-to-r from-[#D8F3F7] via-[#D9E5F9] to-[#D7C6FD]`}
       />
       <Industry />

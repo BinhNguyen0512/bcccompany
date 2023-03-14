@@ -2,21 +2,21 @@ import { ServicesType } from "@/types/home";
 
 export const dataServices: ServicesType[] = [
   {
-    title: "Company Formation",
+    title: "Our vision",
     description:
-      "We utilize onboarding platforms to streamline your incorporation process. We are here to make sure your journey to incorporation stays efficient and enjoyable.",
-    srcImage: "/assets/company_formation-vn.png",
+      "Today less than 4% of ad clicks turn into conversions. We believe that personalization is the future of marketing and that every potential customer can engage with relevant, conversion-optimized landing pages after clicking on an ad.",
+    srcImage: "/assets/company-formation.png",
   },
   {
     title: "Business Accounts",
     description:
-      "Business banking can be jarring for both new and veteran business owners due to changing local laws and extensive procedures. We provide banking consultancy services to help you cut through all the confusion and make the right call for your Vietnam business.",
-    srcImage: "/assets/business_accounts-vn-home.png",
+      "From the very beginning we’ve been focused on helping teams and agencies increase conversions and lower the cost of customer acquisition. We started out empowering customers to do this by giving them the power to make beautiful landing pages quickly. From the lessons these successes taught us, we envisioned a new path forward for the digital advertising industry at large.",
+    srcImage: "/assets/business-accounts.png",
   },
   {
-    title: "Accounting & Auditing",
+    title: "Our future",
     description:
-      "Get trained professionals to balance your books, file accounts and help you stay compliant with the latest regimes and requirements prescribed in the Law on Accounting and the Vietnam Accounting Standard.",
-    srcImage: "/assets/accounting_auditing-offshore_vn.png",
+      "We enable our customers to create, personalize, and optimize landing pages at scale, in minutes, without a developer. With our unique combination of conversion expertise and advanced landing page technology, we’re making that world a reality.",
+    srcImage: "/assets/accounting-auditing.png",
   },
 ];

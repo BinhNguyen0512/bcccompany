@@ -15,7 +15,7 @@ export const ItemIndustry = (props: Props) => {
         alt=""
         height={442}
         width={750}
-        className="rounded-3xl"
+        className="rounded-3xl h-[295px] object-cover"
       ></Image>
       <div className="py-4 px-6">
         <h3 className="line-clamp-2">{item.title}</h3>

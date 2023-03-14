@@ -79,11 +79,11 @@ interface InformationType {
 const information: InformationType[] = [
   {
     srcImage: "assets/icons/phone-circle.svg",
-    info: "(+852) 8192 8666 - (+65) 3138 1666",
+    info: "(+84) 981376700 - (+84) 9837 2222",
   },
   {
     srcImage: "assets/icons/location-circle.svg",
-    info: "Room 9, 4F, Beverley Commercial Centre, 87-105 Chatham road South, Tsim Sha Tsui, Kowloon, Hong Kong",
+    info: "8350 W. Grandridge Blvd Ste 200, Kennewick, WA 99336",
   },
   {
     srcImage: "assets/icons/location-circle.svg",
@@ -168,10 +168,17 @@ const InformationContact = () => {
             <div className="w-full px-8 lg:px-14">
               <h2 className="mb-10 text-5xl">Get In Touch!</h2>
               <p className="mb-6 font-normal tracking-wider  text-gray-600">
-                Thank you for visiting us. At BBCIncorp, we always put the
-                client satisfaction on top of our business plan. If you have any
-                enquiries regarding our service, please feel free to contact us.
-                Our expert team will get back to you soonest.
+                In your search to find a bcccompany I am sure you have
+                undoubtedly come across many different approaches. Finding a
+                BCCCOMPANY that has the right process, tools, and experience to
+                help you get unstuck and moving forward can be challenging. It
+                is for this reason that I offer a Free Discovery Call. It is the
+                best way I have found to help you evaluate me and my services.
+              </p>
+              <p className="mb-6 font-normal tracking-wider  text-gray-600">
+                If you have any enquiries regarding our service, please feel
+                free to contact us. Our expert team will get back to you
+                soonest.
               </p>
               <div className="w-full border-[0.5px] border-gray-300 mb-6"></div>
               {information.map((item: InformationType, index: number) => (

@@ -34,7 +34,7 @@ export const Programme = () => {
         <div className="lg:pt-6 relative">
           <div className="flex justify-center">
             <Image
-              src="/assets/laptop-vn-partner.png"
+              src="/assets/programe-partner.png"
               alt=""
               height={304}
               width={540}

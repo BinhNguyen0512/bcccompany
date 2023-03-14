@@ -27,11 +27,13 @@ const About = () => {
             <div className="lg:col-span-7 text-white tracking-wider font-light">
               <div className="flex h-full flex-col items-center justify-center text-base lg:text-xl">
                 <p className="mb-4 ">
-                  <span className="text-[#03f4ff]">BBC Limited </span>
-                  was established in 2017 with a mission to help startups and
-                  SMEs to free their resources tied up to intimidating company
-                  administration tasks, and thus speed up the process of setting
-                  up and running a business.
+                  <span className="text-[#03f4ff]">BBCCOMPANY Limited </span>
+                  Built on the belief that marketers don’t have to settle for
+                  the status quo, founder Tyson Quick and our senior leadership
+                  team champion an inclusive and innovative culture that
+                  embraces accountability, encourages employees to think big,
+                  and strives to consistently make a positive impact for our
+                  customers, partners, and each other.
                 </p>
                 <p>
                   We know how hard it is for businesses to change in a

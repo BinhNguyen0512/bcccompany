@@ -18,7 +18,7 @@ const Needle = () => {
                 alt=""
                 height={1216}
                 width={2160}
-                className="mb-5"
+                className="mb-5 p-4 max-h-[416px] object-contain"
               />
 
               <h3 className="lg:min-h-[72px] mb-5 text-xl lg:text-3xl">

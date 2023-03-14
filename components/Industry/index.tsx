@@ -37,7 +37,7 @@ const Industry = () => {
             <div className="grid grid-cols-12 rounded-3xl bg-white  transition-all duration-500 hover:scale-105 hover:shadow-[0px_0px_20px_#7c787833] cursor-pointer">
               <div className="col-span-7 pr-[15px]">
                 <Image
-                  src="/assets/Lunar-new-year-1.png"
+                  src="/assets/Lunar-new-year.png"
                   alt=""
                   width={750}
                   height={422}

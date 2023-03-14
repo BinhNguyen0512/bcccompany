@@ -68,7 +68,7 @@ const Footer = () => {
                   height={17}
                   width={17}
                 />
-                <p className="ml-2 text-[#b3b9c2] text-sm">service@BCC.com</p>
+                <p className="ml-2 text-[#b3b9c2] text-sm">bcconline@BCC.com</p>
               </div>
               <div className="flex items-center mb-0.5">
                 <Image
@@ -86,7 +86,7 @@ const Footer = () => {
                   height={17}
                   width={17}
                 />
-                <p className="ml-2 text-[#b3b9c2] text-sm">(+84) 6724 8888</p>
+                <p className="ml-2 text-[#b3b9c2] text-sm">(+84) 9837 2222</p>
               </div>
               <div className="flex items-center mb-0.5">
                 <Image
@@ -96,8 +96,7 @@ const Footer = () => {
                   width={17}
                 />
                 <p className="ml-2 text-[#b3b9c2] text-sm">
-                  Room 9, 4F, Beverley Commercial Centre, 87-105 Chatham road
-                  South, Tsim Sha Tsui, Kowloon, Hong Kong
+                  8350 W. Grandridge Blvd Ste 200, Kennewick, WA 99336
                 </p>
               </div>
               <div className="flex items-center mb-0.5">
@@ -108,7 +107,7 @@ const Footer = () => {
                   width={17}
                 />
                 <p className="ml-2 text-[#b3b9c2] text-sm">
-                  68 Circular road, #02-01 Singapore (049422), Singapore
+                  Al. Piłsudskiego 6/1, Białystok, Poland
                 </p>
               </div>
 

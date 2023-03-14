@@ -25,7 +25,7 @@ const Partner = () => {
         links={links}
         title={"Partner With BBC"}
         description={
-          "We simplify your Vietnam company setup procedures and administrative tasks with tailor-made solutions and seamless experience."
+          "Our partner achieve 4x more conversions than the industry average because our platform makes it easy to scale, personalize, and optimize unique landing pages experiences for every ad campaign."
         }
         srcImage={"/assets/banner-partner.png"}
         bgColor={"bg-gradient-to-r from-[#b7d7f6] via-[#bfe5f9] to-[#c6f0fb]"}
